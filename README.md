@@ -28,6 +28,7 @@ The provided Python scripts utilize **Playwright (Patchright)** and **Selenium**
 * Uses asynchronous Playwright to launch a non-headless Chrome instance.
 * Bypasses `AutomationControlled` detection.
 * Monitors the DOM for the `cf-turnstile-response` token and calculates accuracy over 10 trials.
+* For the Headless : True It Cannot Work As a Cloudflare can detect it easy so we can work with Headless false and minimize the browser screen. 
 
 ### 2. Manual Token Injection & Script Blocking (`Task2.py`)
 * **Neutralization:** Redefines the `window.turnstile` object to block the challenge from loading.
